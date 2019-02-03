@@ -1,10 +1,7 @@
 function FirstReverse(str) {
-	var newStr = '';
-	for(i = 0; i < str.length; i++) {
-		newStr += str[str.length - i - 1];
-	}
-
-	return newStr;
+	var arr = str.split("");
+	arr.reverse();
+	return arr.join("");
 }
 
-FirstReverse('I Love Development.');
+console.log(FirstReverse('I Love Development.'));
